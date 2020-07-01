@@ -5,10 +5,6 @@ metadata:
   labels:
     env: monitor
 spec:
-  volumes:
-    - name: task-pv-storage
-      persistentVolumeClaim:
-        claimName: task-pv-claim
   containers:
     - name: task-pv-container
       image: httpd:latest
