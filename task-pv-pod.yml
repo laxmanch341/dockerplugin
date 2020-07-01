@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: task-pv-container
-      image: httpd:latest
+      image: laxmanch341/httpd:v1
       ports:
         - containerPort: 80
           name: "apache-server"
