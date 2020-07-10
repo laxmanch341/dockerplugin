@@ -11,3 +11,6 @@ spec:
       ports:
         - containerPort: 80
           name: "apache-server"
+      volumeMounts:
+        - mountPath: "/var/www/html"
+          name: task-pv-storage
